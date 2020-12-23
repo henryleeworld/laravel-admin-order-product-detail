@@ -1,6 +1,6 @@
-# Laravel 7 後臺管理商品詳情
+# Laravel 8 後臺管理商品詳情
 
-在後臺登入頁面中查看顧客的訂單出貨資訊，在顧客下單後，因應不同的需求，店家需要為顧客修改訂單中購買的品項。Laravel 7 後臺管理商品詳情主要是用的 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
+在後臺登入頁面中查看顧客的訂單出貨資訊，在顧客下單後，因應不同的需求，店家需要為顧客修改訂單中購買的品項。Laravel 8 後臺管理商品詳情主要是用的 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -12,7 +12,7 @@ $ git clone
 ```sh
 $ composer install
 ```
-- 產⽣ Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
+- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
 ```
@@ -21,16 +21,16 @@ $ php artisan key:generate
 $ php artisan migrate --seed
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
-- 你可以登入經由 `/login` 來進行登入，預社的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
+- 你可以登入經由 `/login` 來進行登入，預設的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/4lDSbde.png)
-> 客人會依靠你所提供的資訊，決定要付給你的金額是多少
+![](https://i.imgur.com/6WqPAys.png)
+> 結尾使用 9 是一個大家最常使用的定價撇步。儘管只差了一塊錢，人們還是認為 50 元與 49 元中 49 元更加便宜
 
-![](https://i.imgur.com/pIGVBe1.png)
-> 供您購買變身道具、魔術方塊等多項商品
+![](https://i.imgur.com/zLZiVN5.png)
+> 等顧客來探索挖挖寶，不怕顧客找不到想要的商品
 
-![](https://i.imgur.com/roNSk4K.png)
+![](https://i.imgur.com/Lwt6OYb.png)
 > 查看顧客的訂單出貨資訊
