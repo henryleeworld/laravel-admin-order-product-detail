@@ -9,10 +9,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('order_product', function (Blueprint $table) {
-            $table->unsignedInteger('order_id');
-            $table->foreign('order_id')->references('id')->on('orders')->onDelete('cascade');
-            $table->unsignedInteger('product_id');
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
+            $table->foreignId('order_id')->constrained()->onDelete('cascade');
+            $table->foreignId('product_id')->constrained()->onDelete('cascade');
             $table->integer('quantity');
         });
     }

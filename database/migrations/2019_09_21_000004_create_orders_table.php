@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->string('customer_name');
             $table->string('customer_email')->nullable();
             $table->timestamps();
