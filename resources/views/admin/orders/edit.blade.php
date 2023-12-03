@@ -72,7 +72,7 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <button id="add_row" class="btn btn-default pull-left">+ 新增資料</button>
+                            <button id="add_row" class="btn btn-light pull-left">+ 新增資料</button>
                             <button id='delete_row' class="pull-right btn btn-danger">- 刪除資料</button>
                         </div>
                     </div>
